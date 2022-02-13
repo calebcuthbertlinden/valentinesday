@@ -1,6 +1,9 @@
 import logo from './heart.png';
 import './App.css';
 import Particles from "react-tsparticles";
+import * as animationData from './lovaanimation.json'
+
+import Lottie from 'react-lottie';
 
 function App() {
 
@@ -13,6 +16,16 @@ function App() {
   const particlesLoaded = (container) => {
     console.log(container);
   };
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true, 
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
+
 
   return (
     <div className="App">
@@ -591,12 +604,14 @@ function App() {
 
       <header className="App-header">
 
-
-
+        
 <div id="wrapper">
-          <img src={logo} className="App-logo" alt="logo" />
+          {/* <img src={logo} className="App-logo" alt="logo" /> */}
+          <Lottie options={defaultOptions}
+              height={400}
+              width={400}/>
           <p>
-            To my valentine, Stink Moose. I love you
+            To my valentine, Stink Moose. <br/>I love you
           </p>
         </div>
 
