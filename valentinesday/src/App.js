@@ -618,7 +618,7 @@ function App() {
           <Lottie options={defaultOptions}
               height={400}
               width={400}/>
-          <p>
+          <p style={{margin: '2em'}}>
             Here is one of your favourites to brighten up your day.
           </p>
         </div>
