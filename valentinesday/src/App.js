@@ -1,7 +1,7 @@
 import logo from './heart.png';
 import './App.css';
 import Particles from "react-tsparticles";
-import * as animationData from './secondanimation.json'
+import * as animationData from './food.json'
 import SpotifyPlayer from 'react-spotify-player';
 
 import Lottie from 'react-lottie';
