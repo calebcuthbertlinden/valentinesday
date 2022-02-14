@@ -1,7 +1,8 @@
 import logo from './heart.png';
 import './App.css';
 import Particles from "react-tsparticles";
-import * as animationData from './lovaanimation.json'
+import * as animationData from './secondanimation.json'
+import SpotifyPlayer from 'react-spotify-player';
 
 import Lottie from 'react-lottie';
 
@@ -25,6 +26,13 @@ function App() {
       preserveAspectRatio: 'xMidYMid slice'
     }
   };
+
+  const size = {
+    width: '100%',
+    height: 300,
+  };
+  const view = 'list'; // or 'coverart'
+  const theme = 'black';
 
 
   return (
@@ -611,9 +619,18 @@ function App() {
               height={400}
               width={400}/>
           <p>
-            To my valentine, Stink Moose. <br/>I love you
+            Here is one of your favourites to brighten up your day.
           </p>
         </div>
+
+        <SpotifyPlayer
+          uri="spotify:album:12zl1WmHPFCSyKYbL4vBZn"
+          size={size}
+          view={view}
+          theme={theme}
+        />
+
+{/* <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/12zl1WmHPFCSyKYbL4vBZn?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> */}
 
       </header>
     </div>
