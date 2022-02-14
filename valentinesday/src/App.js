@@ -1,8 +1,6 @@
-import logo from './heart.png';
 import './App.css';
 import Particles from "react-tsparticles";
-import * as animationData from './food.json'
-import SpotifyPlayer from 'react-spotify-player';
+import * as animationData from './food.json';
 
 import Lottie from 'react-lottie';
 
@@ -614,7 +612,6 @@ function App() {
 
         
 <div id="wrapper">
-          {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <Lottie options={defaultOptions}
               height={400}
               width={400}/>
@@ -624,15 +621,6 @@ function App() {
 NAAB6ZVWJGBQDN2S
           </p>
         </div>
-
-        <SpotifyPlayer
-          uri="spotify:album:12zl1WmHPFCSyKYbL4vBZn"
-          size={size}
-          view={view}
-          theme={theme}
-        />
-
-{/* <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/12zl1WmHPFCSyKYbL4vBZn?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe> */}
 
       </header>
     </div>
