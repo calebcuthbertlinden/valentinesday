@@ -1,6 +1,6 @@
 import './App.css';
 import Particles from "react-tsparticles";
-import * as animationData from './food.json';
+import * as animationData from './dinner.json';
 
 import Lottie from 'react-lottie';
 
