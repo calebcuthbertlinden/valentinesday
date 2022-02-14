@@ -619,7 +619,9 @@ function App() {
               height={400}
               width={400}/>
           <p style={{margin: '2em'}}>
-            Here is one of your favourites to brighten up your day.
+            Uber eats REDEMPTION CODE:
+            <br/>
+NAAB6ZVWJGBQDN2S
           </p>
         </div>
 
